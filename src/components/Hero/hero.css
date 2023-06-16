@@ -1,0 +1,83 @@
+section.hero {
+  height: 100vh;
+  scroll-snap-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero_container {
+  height: 100vh;
+  scroll-snap-align: center;
+  width: 1400px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero_container .left {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.25rem;
+}
+
+.hero_container .title {
+  font-size: 4.5rem;
+}
+
+.hero_container .weDo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.hero_container .line {
+  height: 5px;
+}
+
+.hero_container .subtitle {
+  color: #da4ea2;
+}
+
+.hero_container .desc {
+  font-size: 1.5rem;
+  color: lightgray;
+}
+
+.hero_container button.btn {
+  background-color: #da4ea2;
+  color: #fff;
+  font-weight: 500;
+  width: 100px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.hero_container .right {
+  flex: 3;
+  position: relative;
+}
+
+.hero_container .right img {
+  width: 800px;
+  height: 600px;
+  object-fit: contain;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  animation: animate 2s infinite ease alternate;
+}
+
+@keyframes animate {
+  100% {
+    transform: translateY(20px);
+  }
+}

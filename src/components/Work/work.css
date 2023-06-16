@@ -1,0 +1,59 @@
+section.work {
+  height: 100vh;
+  scroll-snap-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.work_container {
+  width: 1400px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.work_container .left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.work_container .list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.work_container .listItem {
+  position: relative;
+  font-size: 5.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: transparent;
+  -webkit-text-stroke: 1px #fff;
+}
+
+.work_container .listItem::after {
+  content: attr(text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #da4ea2;
+  width: 0px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.work_container .listItem:hover::after {
+  animation: moveText 0.5s linear both;
+}
+
+@keyframes moveText {
+  to {
+    width: 100%;
+  }
+}
+
+.work_container .right {
+  flex: 1;
+}

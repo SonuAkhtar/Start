@@ -1,0 +1,61 @@
+section.about {
+  height: 100vh;
+  scroll-snap-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.about_container {
+  height: 100vh;
+  scroll-snap-align: center;
+  width: 1400px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about_container .left {
+  flex: 1;
+}
+
+.about_container .right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.25rem;
+}
+
+.about_container .title {
+  font-size: 4.5rem;
+}
+
+.about_container .weDo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.about_container .line {
+  height: 5px;
+}
+
+.about_container .subtitle {
+  color: #da4ea2;
+}
+
+.about_container .desc {
+  font-size: 1.5rem;
+  color: lightgray;
+}
+
+.about_container button.btn {
+  background-color: #da4ea2;
+  color: #fff;
+  font-weight: 500;
+  width: 150px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}

@@ -1,0 +1,50 @@
+section.navbar {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar_container {
+  width: 1400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+}
+
+.navbar_container .links {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+img.logo {
+  height: 50px;
+}
+
+ul.list {
+  display: flex;
+  gap: 1.25rem;
+  list-style: none;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.icon {
+  width: 1.25rem;
+  cursor: pointer;
+}
+
+button {
+  width: 100px;
+  padding: 0.75rem;
+  background-color: #da4ea2;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+}
