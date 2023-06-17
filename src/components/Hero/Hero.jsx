@@ -23,10 +23,8 @@ const Hero = () => {
     }
   };
 
-  console.log(mobile);
-
   return (
-    <section className="hero">
+    <section className="hero" id="hero">
       <Navbar />
       <div className="hero_container">
         <div className="left">

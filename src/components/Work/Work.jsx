@@ -18,7 +18,7 @@ const Work = () => {
   const [work, setWork] = useState("Development");
 
   return (
-    <section className="work">
+    <section className="work" id="work">
       <div className="work_container">
         <div className="left">
           <ul className="list">

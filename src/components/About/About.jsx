@@ -6,7 +6,7 @@ import "./about.css";
 
 const About = () => {
   return (
-    <section className="about">
+    <section className="about" id="about">
       <div className="about_container">
         <div className="left">
           <Canvas camera={{ fov: 30, position: [5, 5, 5] }}>
