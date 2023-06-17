@@ -71,3 +71,25 @@ section.contact {
 .contact_container .right {
   flex: 1;
 }
+
+@media only screen and (max-width: 768px) {
+  .contact_container {
+    flex-direction: column;
+    padding: 1rem 0;
+    gap: 0;
+  }
+
+  .contact_container .left {
+    justify-content: center;
+  }
+
+  .contact_container .form {
+    width: 280px;
+    gap: 1rem;
+  }
+
+  .contact_container .input,
+  .contact_container .textArea {
+    padding: 1rem;
+  }
+}

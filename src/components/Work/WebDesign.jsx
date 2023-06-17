@@ -8,7 +8,7 @@ const WebDesign = () => {
     <Canvas>
       <Stage environment="city" intensity={0.5}>
         <Iphone />
-        <OrbitControls enableZoom={false} />
+        <OrbitControls enableZoom={false} autoRotate autoRotateSpeed={7}/>
       </Stage>
     </Canvas>
   );

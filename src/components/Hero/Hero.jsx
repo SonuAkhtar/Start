@@ -1,10 +1,30 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Navbar from "../Navbar/Navbar";
 import { Canvas } from "@react-three/fiber";
 import { MeshDistortMaterial, OrbitControls, Sphere } from "@react-three/drei";
 import "./hero.css";
 
 const Hero = () => {
+  const [mobile, setMobile] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const handleResize = () => {
+    if (window.innerWidth < 768) {
+      setMobile(true);
+    } else {
+      setMobile(false);
+    }
+  };
+
+  console.log(mobile);
+
   return (
     <section className="hero">
       <Navbar />
@@ -29,7 +49,7 @@ const Hero = () => {
             <OrbitControls enableZoom={false} autoRotate />
             <ambientLight intensity={1} />
             <directionalLight position={[3, 2, 1]} />
-            <Sphere args={[1, 100, 200]} scale={2}>
+            <Sphere args={[1, 100, 200]} scale={`${mobile ? 1.5 : 2}`}>
               <MeshDistortMaterial
                 color="#220737"
                 attach="material"

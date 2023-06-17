@@ -59,3 +59,22 @@ section.about {
   border-radius: 0.5rem;
   cursor: pointer;
 }
+
+@media only screen and (max-width: 768px) {
+  .about_container {
+    padding: 1rem;
+  }
+
+  .about_container .left {
+    display: none;
+  }
+
+  .about_container .right {
+    align-items: center;
+    text-align: center;
+  }
+
+  .about_container .title {
+    font-size: 3rem;
+  }
+}

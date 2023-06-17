@@ -7,3 +7,9 @@
   color: #fff;
   background-image: url("../public/Images/bg.jpeg");
 }
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #fff;
+}

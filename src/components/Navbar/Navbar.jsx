@@ -6,12 +6,17 @@ const Navbar = () => {
     <section className="navbar">
       <div className="navbar_container">
         <div className="links">
-          <img src="../public/images/logo.png" alt="logo" className="logo" />
+          <div className="nav_logo">LOGO</div>
           <ul className="list">
-            <li className="listItem">Home</li>
-            <li className="listItem">Studio</li>
-            <li className="listItem">Works</li>
-            <li className="listItem">Contact</li>
+            <li className="listItem">
+              <a href="#work">Works</a>
+            </li>
+            <li className="listItem">
+              <a href="#contact">Contact</a>
+            </li>{" "}
+            <li className="listItem">
+              <a href="#about">About Us</a>
+            </li>
           </ul>
         </div>
         <div className="icons">
@@ -20,7 +25,7 @@ const Navbar = () => {
             alt="search"
             className="icon"
           />
-          <button className="">Hire Now</button>
+          <button className="">Contact Now</button>
         </div>
       </div>
     </section>

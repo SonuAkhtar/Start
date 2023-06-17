@@ -6,6 +6,7 @@ section.work {
 }
 
 .work_container {
+  position: relative;
   width: 1400px;
   display: flex;
   justify-content: space-between;
@@ -56,4 +57,48 @@ section.work {
 
 .work_container .right {
   flex: 1;
+}
+
+/* style for description modal */
+.work_modal_desc {
+  position: absolute;
+  top: 8rem;
+  right: 1rem;
+  height: 70px;
+  width: 250px;
+  padding: 0.75rem;
+  background-color: #fff;
+  color: #333;
+  border-radius: 1rem 1rem 1rem 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+@media only screen and (max-width: 768px) {
+  .work_container {
+    width: 100%;
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .work_container .left {
+    justify-content: center;
+  }
+
+  .work_container .listItem {
+    font-size: 2rem;
+  }
+
+  .work_modal_desc {
+    height: max-content;
+    width: 280px;
+    padding: 0.5rem;
+    font-size: 0.75rem;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
 }

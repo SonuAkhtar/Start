@@ -17,34 +17,54 @@ section.navbar {
   gap: 3rem;
 }
 
-img.logo {
-  height: 50px;
+.navbar_container .nav_logo {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  color: #da4ea2;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
-ul.list {
+.navbar_container ul.list {
   display: flex;
   gap: 1.25rem;
   list-style: none;
 }
 
-.icons {
+.navbar_container .icons {
   display: flex;
   align-items: center;
   gap: 1.25rem;
 }
 
-.icon {
+.navbar_container .icon {
   width: 1.25rem;
   cursor: pointer;
 }
 
-button {
-  width: 100px;
-  padding: 0.75rem;
+.navbar_container button {
+  width: max-content;
+  padding: 0.75rem 1rem;
   background-color: #da4ea2;
   color: #fff;
   cursor: pointer;
   border: none;
   outline: none;
   border-radius: 0.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+  section.navbar {
+    width: 100%;
+  }
+
+  .navbar_container {
+    width: 100%;
+    padding: 0.75rem;
+  }
+
+  .navbar_container ul.list {
+    display: none;
+  }
 }

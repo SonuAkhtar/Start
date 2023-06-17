@@ -8,7 +8,7 @@ const SocialMedia = () => {
     <Canvas>
       <Stage environment="city" intensity={0.5}>
         <Camera />
-        <OrbitControls enableZoom={false} />
+        <OrbitControls enableZoom={false} autoRotate autoRotateSpeed={7}/>
       </Stage>
     </Canvas>
   );
