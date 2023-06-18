@@ -30,11 +30,7 @@ const Hero = () => {
         <div className="left">
           <h1 className="title">Think. Make. Solve.</h1>
           <div className="weDo">
-            <img
-              src="../../public/images/line.png"
-              alt="line"
-              className="line"
-            />
+            <span className="line"></span>
             <h2 className="subtitle">What we do</h2>
           </div>
           <p className="desc">
@@ -56,7 +52,7 @@ const Hero = () => {
               />
             </Sphere>
           </Canvas>
-          <img src="../../public/images/moon.png" alt="moon" />
+          <img src="/images/moon.png" alt="moon" />
         </div>
       </div>
     </section>

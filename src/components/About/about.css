@@ -37,6 +37,9 @@ section.about {
 
 .about_container .line {
   height: 5px;
+  background-color: gray;
+  width: 50px;
+  border-radius: 1rem;
 }
 
 .about_container .subtitle {

@@ -19,11 +19,7 @@ const About = () => {
         <div className="right">
           <h1 className="title">Think outside the square space</h1>
           <div className="weDo">
-            <img
-              src="../../public/images/line.png"
-              alt="line"
-              className="line"
-            />
+            <span className="line"></span>
             <h2 className="subtitle">Who we are</h2>
           </div>
           <p className="desc">

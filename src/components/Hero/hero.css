@@ -35,6 +35,9 @@ section.hero {
 
 .hero_container .line {
   height: 5px;
+  background-color: gray;
+  width: 50px;
+  border-radius: 1rem;
 }
 
 .hero_container .subtitle {
