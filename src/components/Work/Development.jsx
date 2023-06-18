@@ -13,8 +13,8 @@ const Development = () => {
         </Stage>
       </Canvas>
       <span className="work_modal_desc">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic suscipit
-        nostrum optio numquam, eaque eos, alias!
+        We design products with a strong focus on both world class design and
+        performance ensuring your product success in market.
       </span>
     </>
   );
