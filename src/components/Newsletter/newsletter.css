@@ -1,7 +1,7 @@
 section.newsletter {
   position: absolute;
-  bottom: 20vh;
-  height: 20vh;
+  bottom: 25vh;
+  height: 10vh;
   width: 70vw;
   scroll-snap-align: center;
   background-color: #fff;
@@ -71,7 +71,6 @@ section.newsletter {
   section.newsletter {
     bottom: 0;
     top: 0;
-    height: 10vh;
     width: 90vw;
     padding: 2rem 1rem;
     border-radius: 2rem;

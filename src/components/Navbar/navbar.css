@@ -24,18 +24,61 @@ section.navbar {
   color: #da4ea2;
   font-size: 2rem;
   font-weight: bold;
+  transition: all 0.5s ease;
+  z-index: 9999;
 }
 
 .navbar_container ul.list {
   display: flex;
   gap: 1.25rem;
   list-style: none;
+  transition: all 0.5s ease;
 }
 
 .navbar_container .icons {
+  position: relative;
   display: flex;
   align-items: center;
   gap: 1.25rem;
+}
+
+.mobile_menu {
+  position: absolute;
+  right: 1rem;
+  font-size: 1.2rem;
+  display: none;
+}
+
+.navbar_container .icons .search {
+  position: relative;
+}
+
+.navbar_container .icons input {
+  border: none;
+  outline: none;
+  padding: 0.7rem 1rem;
+  border-radius: 0.5rem;
+  width: 0;
+  background-color: transparent;
+  transition: all 0.5s ease;
+}
+
+.navbar_container .icons input.clicked {
+  border: 1px solid lightgray;
+  width: 300px;
+}
+
+.navbar_container .icons i {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.navbar_container .icons i.clicked {
+  right: 1rem;
 }
 
 .navbar_container .icon {
@@ -52,6 +95,12 @@ section.navbar {
   border: none;
   outline: none;
   border-radius: 0.5rem;
+  z-index: 9999;
+  transition: all 0.5s ease;
+}
+
+.navbar_container button:hover {
+  background-color: #ad3b7f;
 }
 
 @media only screen and (max-width: 768px) {
@@ -65,6 +114,69 @@ section.navbar {
   }
 
   .navbar_container ul.list {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background: rgb(54, 15, 78);
+    background: linear-gradient(
+      145deg,
+      rgba(54, 15, 78, 1) 0%,
+      rgba(8, 8, 111, 1) 35%,
+      rgba(11, 90, 106, 1) 100%
+    );
+    z-index: 999;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    transition: all 0.5s ease;
+    transform: translateX(-100vw);
+  }
+
+  .navbar_container ul.list.active {
+    transform: translateX(0);
+  }
+
+  .navbar_container .listItem a {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  .navbar_container .icons .search {
+    position: absolute;
+    top: -1.25rem;
+    right: 3.5rem;
+  }
+
+  .navbar_container .icons input.clicked {
+    width: 200px;
+  }
+
+  .navbar_container .nav_logo.clicked {
+    transform: translateX(-50vw);
+  }
+
+  .mobile_menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+  }
+
+  .navbar_container button {
     display: none;
+  }
+
+  .navbar_container .icons .burger,
+  .navbar_container .icons .close {
+    transition: all 0.5s ease;
+    transform: scale(0);
+  }
+
+  .navbar_container .icons .burger.active,
+  .navbar_container .icons .close.active {
+    transform: scale(1);
   }
 }
