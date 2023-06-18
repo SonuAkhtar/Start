@@ -5,7 +5,13 @@
   overflow-y: auto;
   scrollbar-width: none;
   color: #fff;
-  background-image: url("../public/Images/bg.jpeg");
+  background: rgb(54, 15, 78);
+  background: linear-gradient(
+    145deg,
+    rgba(54, 15, 78, 1) 0%,
+    rgba(8, 8, 111, 1) 35%,
+    rgba(11, 90, 106, 1) 100%
+  );
 }
 
 a {

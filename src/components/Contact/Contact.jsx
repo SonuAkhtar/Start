@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import "./contact.css";
-import MapChart from "../Map/Map";
+import Map from "../Map/Map";
 import emailjs from "@emailjs/browser";
 
 const Contact = () => {
@@ -62,7 +62,7 @@ const Contact = () => {
           </form>
         </div>
         <div className="right">
-          <MapChart />
+          <Map />
         </div>
       </div>
     </section>

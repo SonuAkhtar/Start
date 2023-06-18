@@ -17,7 +17,7 @@ const Cube = () => {
           <PerspectiveCamera makeDefault position={[0, 0, 5]} />
           <color attach="background" args={["#df9dcd"]} />
           <Text ref={textRef} fontSize={1} color="#555">
-            Hello
+            Who we are
           </Text>
         </RenderTexture>
       </meshStandardMaterial>
