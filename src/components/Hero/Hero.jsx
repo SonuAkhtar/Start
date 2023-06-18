@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Navbar from "../Navbar/Navbar";
 import { Canvas } from "@react-three/fiber";
 import { MeshDistortMaterial, OrbitControls, Sphere } from "@react-three/drei";
+import MoonImg from "/Images/moon.png";
 import "./hero.css";
 
 const Hero = () => {
@@ -52,7 +53,7 @@ const Hero = () => {
               />
             </Sphere>
           </Canvas>
-          <img src="/images/moon.png" alt="moon" />
+          <img src={MoonImg} alt="moon" />
         </div>
       </div>
     </section>
