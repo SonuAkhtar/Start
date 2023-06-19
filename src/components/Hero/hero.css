@@ -10,7 +10,7 @@ section.hero {
 .hero_container {
   height: 100%;
   scroll-snap-align: center;
-  width: 1400px;
+  width: 1200px;
   display: flex;
   justify-content: space-between;
 }

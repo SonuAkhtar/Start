@@ -13,7 +13,7 @@ const Map = () => {
       projection="geoAzimuthalEqualArea"
       projectionConfig={{
         rotate: [-90.0, -32.0, 0],
-        center: [-3, -7],
+        center: [-3, -12],
         scale: 1300,
       }}
       style={{ width: "100%", height: "100%" }}

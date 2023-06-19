@@ -7,7 +7,7 @@ section.work {
 
 .work_container {
   position: relative;
-  width: 1400px;
+  width: 1200px;
   display: flex;
   justify-content: space-between;
 }
