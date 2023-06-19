@@ -23,30 +23,10 @@ section.hero {
   gap: 1.25rem;
 }
 
-.hero_container .title {
-  font-size: 4.5rem;
-}
-
 .hero_container .weDo {
   display: flex;
   align-items: center;
   gap: 0.75rem;
-}
-
-.hero_container .line {
-  height: 5px;
-  background-color: gray;
-  width: 50px;
-  border-radius: 1rem;
-}
-
-.hero_container .subtitle {
-  color: #da4ea2;
-}
-
-.hero_container .desc {
-  font-size: 1.5rem;
-  color: lightgray;
 }
 
 .hero_container .right {
@@ -91,17 +71,6 @@ section.hero {
     align-items: center;
     width: 100%;
     gap: 0.5rem;
-  }
-
-  .hero_container .title {
-    text-align: center;
-    font-size: 3.5rem;
-  }
-
-  .hero_container .desc {
-    font-size: 1.25rem;
-    padding: 1rem;
-    text-align: center;
   }
 
   .hero_container .right img {

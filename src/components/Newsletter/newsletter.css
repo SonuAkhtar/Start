@@ -94,5 +94,6 @@ section.newsletter {
 
   .newsletter_container button {
     font-weight: 500;
+    width: max-content;
   }
 }

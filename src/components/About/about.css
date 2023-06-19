@@ -25,47 +25,26 @@ section.about {
   gap: 1.25rem;
 }
 
-.about_container .title {
-  font-size: 4.5rem;
-}
-
 .about_container .weDo {
   display: flex;
   align-items: center;
   gap: 0.75rem;
 }
 
-.about_container .line {
-  height: 5px;
-  background-color: gray;
-  width: 50px;
-  border-radius: 1rem;
-}
-
-.about_container .subtitle {
-  color: #da4ea2;
-}
-
-.about_container .desc {
-  font-size: 1.5rem;
-  color: lightgray;
-}
-
 @media only screen and (max-width: 768px) {
   .about_container {
-    padding: 1rem;
+    height: 100vh;
+    width: 100%;
+    padding: 1rem 2rem;
+    flex-direction: column;
   }
 
   .about_container .left {
-    display: none;
+    height: 50vh;
   }
 
   .about_container .right {
     align-items: center;
     text-align: center;
-  }
-
-  .about_container .title {
-    font-size: 3rem;
   }
 }

@@ -54,3 +54,40 @@ button {
 button:hover {
   background-color: #d06da7;
 }
+
+.title {
+  font-size: 4.5rem;
+}
+
+.line {
+  height: 5px;
+  background-color: gray;
+  width: 50px;
+  border-radius: 1rem;
+}
+
+.subtitle {
+  color: #da4ea2;
+}
+
+.desc {
+  font-size: 1.5rem;
+  color: lightgray;
+}
+
+@media only screen and (max-width: 768px) {
+  button {
+    width: 100%;
+  }
+
+  .title {
+    text-align: center;
+    font-size: 3.5rem;
+  }
+
+  .desc {
+    font-size: 1rem;
+    padding: 1rem;
+    text-align: center;
+  }
+}
