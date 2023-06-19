@@ -49,18 +49,6 @@ section.hero {
   color: lightgray;
 }
 
-.hero_container button.btn {
-  background-color: #da4ea2;
-  color: #fff;
-  font-weight: 500;
-  width: 100px;
-  padding: 10px;
-  border: none;
-  outline: none;
-  border-radius: 0.5rem;
-  cursor: pointer;
-}
-
 .hero_container .right {
   flex: 3;
   position: relative;

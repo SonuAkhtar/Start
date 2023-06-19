@@ -51,18 +51,6 @@ section.about {
   color: lightgray;
 }
 
-.about_container button.btn {
-  background-color: #da4ea2;
-  color: #fff;
-  font-weight: 500;
-  width: 150px;
-  padding: 10px;
-  border: none;
-  outline: none;
-  border-radius: 0.5rem;
-  cursor: pointer;
-}
-
 @media only screen and (max-width: 768px) {
   .about_container {
     padding: 1rem;

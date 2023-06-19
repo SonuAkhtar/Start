@@ -86,23 +86,6 @@ section.navbar {
   cursor: pointer;
 }
 
-.navbar_container button {
-  width: max-content;
-  padding: 0.75rem 1rem;
-  background-color: #da4ea2;
-  color: #fff;
-  cursor: pointer;
-  border: none;
-  outline: none;
-  border-radius: 0.5rem;
-  z-index: 9999;
-  transition: all 0.5s ease;
-}
-
-.navbar_container button:hover {
-  background-color: #ad3b7f;
-}
-
 @media only screen and (max-width: 768px) {
   section.navbar {
     width: 100%;

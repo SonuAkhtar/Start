@@ -45,17 +45,6 @@ section.contact {
   border-radius: 0.5rem;
 }
 
-.contact_container button.btn {
-  background-color: #da4ea2;
-  color: #fff;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  font-weight: bold;
-  border-radius: 0.5rem;
-  padding: 1.25rem;
-}
-
 .contact_container .successMsg {
   font-weight: 200;
   font-size: 0.9rem;

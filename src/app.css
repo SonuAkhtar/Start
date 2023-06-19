@@ -15,7 +15,42 @@
 }
 
 a {
+  position: relative;
   text-decoration: none;
   cursor: pointer;
   color: #fff;
+}
+
+a::before {
+  position: absolute;
+  bottom: -0.5rem;
+  left: 0;
+  content: "";
+  background-color: #da4ea2;
+  height: 2px;
+  width: 0;
+  border-radius: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover:before {
+  width: 100%;
+}
+
+button {
+  background-color: #da4ea2;
+  color: #fff;
+  font-weight: 500;
+  padding: 0.75rem 1.5rem;
+  min-width: 100px;
+  width: max-content;
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #d06da7;
 }
