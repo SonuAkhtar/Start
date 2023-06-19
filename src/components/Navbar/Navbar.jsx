@@ -40,10 +40,10 @@ const Navbar = () => {
 
           <div className="mobile_menu" onClick={() => setMenuClick(!menuClick)}>
             <span className={`burger ${menuClick ? "" : "active"}`}>
-              <i class="fa-solid fa-bars"></i>
+              <i className="fa-solid fa-bars"></i>
             </span>
             <div className={`close ${menuClick ? "active" : ""}`}>
-              <i class="fa-solid fa-xmark"></i>
+              <i className="fa-solid fa-xmark"></i>
             </div>
           </div>
         </div>

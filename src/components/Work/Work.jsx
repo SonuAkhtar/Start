@@ -6,13 +6,7 @@ import ProductDesign from "./ProductDesign";
 import Illustration from "./Illustration";
 import SocialMedia from "./SocialMedia";
 
-const WorkType = [
-  "Development",
-  "Illustration",
-  "Product Design",
-  "Social Media",
-  "Web Design",
-];
+const WorkType = ["Development", "Illustration", "UI/UX Design", "Mobile App"];
 
 const Work = () => {
   const [work, setWork] = useState("Development");
@@ -35,16 +29,14 @@ const Work = () => {
           </ul>
         </div>
         <div className="right">
-          {work === "Web Design" ? (
+          {work === "Mobile App" ? (
             <WebDesign />
           ) : work === "Development" ? (
             <Development />
-          ) : work === "Product Design" ? (
+          ) : work === "UI/UX Design" ? (
             <ProductDesign />
-          ) : work === "Illustration" ? (
-            <Illustration />
           ) : (
-            <SocialMedia />
+            <Illustration />
           )}
         </div>
       </div>
