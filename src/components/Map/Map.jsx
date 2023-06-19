@@ -58,6 +58,20 @@ const Map = () => {
           {"Goa"}
         </text>
       </Annotation>
+      <Annotation
+        subject={[77.5946, 12.9716]}
+        dx={90}
+        dy={-45}
+        connectorProps={{
+          stroke: "#FFF",
+          strokeWidth: 1,
+          strokeLinecap: "round",
+        }}
+      >
+        <text x="45" textAnchor="end" alignmentBaseline="middle" fill="#FFF">
+          {"Bangalore"}
+        </text>
+      </Annotation>
     </ComposableMap>
   );
 };
